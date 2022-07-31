@@ -1,0 +1,229 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color:black;
+  line-height: 1.8;
+}
+ 
+.w3-blue, .w3-light-grey{
+  border-radius: 10px;
+ 
+}
+/* Create a Parallax Effect */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/qoute3.jpg');
+  min-height: 100%;
+}
+ 
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+ 
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+ 
+.w3-wide {letter-spacing: 0px;}
+.w3-hover-opacity {cursor: pointer;}
+ 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+ 
+body{margin-top:20px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+ 
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+ 
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+ 
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+ 
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+ 
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+ 
+.mb-1{
+    line-height: 1.6;
+    font-size: medium;
+}
+p.mb-0{
+    font-size: x-small;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: #3b82f6;
+    border-width: 1px;
+    border-radius: 5px;
+}
+ 
+.circle {
+    padding: 13px 20px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    color: #fff;
+    max-height: 50px;
+    z-index: 0;
+  }
+ 
+  .how-it-works.row .col-2 {
+    align-self: stretch;
+  }
+  .how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid #3b82f6;
+    z-index: -1;
+  }
+  .how-it-works.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  .how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+  }
+  .how-it-works.row .col-2.top::after {
+    height: 102%;
+    left: 50%;
+    top: 0;
+  }
+ 
+  .how-it-works.row .col-2.top.test::after {
+      height: 50%;
+      left: calc(50% - 3px);
+      top: 0;
+    }
+ 
+  .timeline div {
+    padding: 0;
+    height: 40px;
+  }
+  .timeline hr {
+    border-top: 3px solid #3b82f6;
+    margin: 0;
+    top: 17px;
+    position: relative;
+  }
+  .timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .timeline .corner {
+    border: 3px solid #3b82f6;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .timeline .top-right {
+    left: 50%;
+    top: -50%;
+  }
+  .timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+  }
+  .timeline .top-left {
+    left: -50%;
+    top: -50%;
+  }
+  .timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+  }
+
+  .img_exp{
+    width: 50px;
+    height: auto;
+
+  }
+
+  .card-img-top{
+    overflow: hidden;
+  }
+
+  a{
+    color:#000000;
+    text-decoration: none;
+  }
+
+  .w3-top{
+    background-color: rgba(255, 255, 255);
+    z-index: 1;
+
+  }
+  p{
+    text-align: justify;
+  }
+  #exp, #exp_des{
+    text-align: center;
+  }
+  #exp_des{
+    text-align: center;
+  }
+
